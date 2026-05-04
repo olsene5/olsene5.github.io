@@ -142,10 +142,6 @@ footer {
 }
 
 
-
-
-
-
 @media screen and (max-width: 850px) {
   .half, .third, .two-thirds {
     flex: 0 0 100%;          
@@ -277,3 +273,7 @@ footer {
   box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
 }
 
+th{
+  background-color: #e0e0e0;
+  color: black;
+}
