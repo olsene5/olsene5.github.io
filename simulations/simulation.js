@@ -1,5 +1,5 @@
-import { StarModel } from "./StarModel.js";
-import { drawStarModel } from "./animation.js";
+import { StarModel } from "simulations/starModel.js";
+import { drawStarModel } from "simulations/animation.js";
 
 let star = null;
 let lastTime = performance.now();
