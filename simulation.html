@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stellar Observatory - Simulation</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+  <h1>Stellar Observatory</h1>
+  <p>Stellar Evolution Simulation</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="types.html">Star Types</a></li>
+    <li><a href="diagram.html">HR Diagram</a></li>
+    <li><a href="simulation.html">Simulation</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main>
+
+
+<!-- TOP ROW: CANVAS & CONTROLS -->
+<div class="myRow">
+
+  <!-- CANVAS AREA -->
+  <section class="two-thirds">
+    <h2>Stellar Simulation</h2>
+
+    <canvas id="canvas"></canvas>
+
+  </section>
+
+  <!-- CONTROL PANEL -->
+  <section class="third">
+
+    <h2>Controls</h2>
+
+    <!-- MASS -->
+    <div class="control-group">
+      <label for="massSlider">Mass (Solar Masses)</label>
+      <input id="massSlider"
+             type="range"
+             min="0.08"
+             max="25"
+             step="0.1"
+             value="12.5">
+
+      <span id="massValue">12.5</span>
+    </div>
+
+    <!-- SPECTRAL TYPE -->
+    <div class="control-group">
+      <p>Spectral Type</p>
+
+      <div class="type-buttons">
+        <button class="type-btn" data-type="O">O</button>
+        <button class="type-btn" data-type="B">B</button>
+        <button class="type-btn" data-type="A">A</button>
+        <button class="type-btn" data-type="F">F</button>
+        <button class="type-btn" data-type="G">G</button>
+        <button class="type-btn" data-type="K">K</button>
+        <button class="type-btn" data-type="M">M</button>
+      </div>
+    </div>
+
+    <!-- SIMULATION BUTTONS -->
+    <div class="control-group">
+      <button id="start">Start</button>
+    </div>
+
+  </section>
+
+</div>
+
+<!-- 🔷 NARRATION SECTION -->
+<section>
+
+  <h4>A Bit Of Context</h4>
+
+  <p>
+    The simulation starts with a star on the main sequence, meaning they are 
+    burning hydrogen in the core. The user may select the mass and spectral type of 
+    the star as it starts on the main sequence. Watch how the color and
+    evolutionary stages are dependent on the initial mass and spectral type of a star.
+  </p>
+
+</section>
+
+</main>
+
+<footer>
+  <p>Elizabeth Olsen | Web Design Project | 2026</p>
+</footer>
+
+</div>
+
+
+
+ 
+<script type="module" src="simulations/controls.js"></script>
+<script type="module" src="simulations/simulation.js"></script>
+<script type="module" src="simulations/animation.js"></script>
+<script type="module" src="simulations/starModel.js"></script>
+
+
+</body>
+</html>
